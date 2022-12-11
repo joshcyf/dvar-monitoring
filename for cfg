@@ -1,0 +1,12 @@
+//change cyf to your in game name or the monitoring wont work
+bind2 dpad_up "vstr pressdpadup"
+bind2 dpad_down "vstr pressdpaddown"
+bind2 dpad_left "vstr pressdpadleft"
+bind2 dpad_right "vstr pressdpadright"
+
+set pressdpadup "set dpadup cyf"
+set pressdpaddown "set dpaddown cyf"
+set pressdpadleft "set dpadleft cyf"
+set pressdpadright "set dpadright cyf"
+set pressgostand "set gostand cyf"
+set pressweapnext "set nextweap cyf"
