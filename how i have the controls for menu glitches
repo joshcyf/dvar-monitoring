@@ -1,0 +1,25 @@
+  self thread glitchBind("asc_rapid", "Rapidfire.", ::rapidfire );
+
+glitchBind(dvar, description, func ){
+	setDvar(dvar, "set "+dvar+" "+self.name+". For "+description);
+	wait 0.01;
+	setDvar(dvar, "");
+	level endon("game_ended");
+	self endon("disconnect");
+	self endon("binds_end");
+	self thread notifyOnDvarPlayer(dvar, dvar);
+	for(;;){
+
+		self waittill(dvar);
+		self thread [[func]]();
+		wait 0.01;
+	}
+}
+rapidfire(){
+	houdiniweapon = "dog_bite_mp";
+	self giveweapon(houdiniweapon);
+	wait 0.01;
+	self switchtoweapon(houdiniweapon);
+	wait 0.01;
+	self takeweapon(houdiniweapon);
+}
