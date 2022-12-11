@@ -1,3 +1,4 @@
+//from these you would just have the usual self waittill("+actionslot 1"); n shit for menu scripts or use actionslotOnePressed() ect
 cyf_buttons(){
 	//the dvar goes on the left and the notify goes on the right
 	self thread notifyOnDvarPlayer("dpadup", "+actionslot 1");
